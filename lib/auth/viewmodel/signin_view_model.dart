@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ilabs/auth/view/pages/home_page.dart';
-
 import '../model/auth_service.dart';
 import '../model/user_model.dart';
 import 'package:provider/provider.dart';
@@ -20,7 +19,6 @@ class SignInViewModel extends ChangeNotifier {
     try {
       await _authService.signIn(email, password);
       final user = await _authService.getCurrentUser();
-      // Save user to provider and local storage
 
       if (user != null) {
         final userModel = UserModel(

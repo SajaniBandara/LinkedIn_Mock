@@ -8,20 +8,17 @@ class UserProvider with ChangeNotifier {
 
   UserModel? get user => _user;
 
-  // Load user from local storage
   Future<void> loadUser() async {
     _user = await _localStorageService.getUser();
     notifyListeners();
   }
 
-  // Save user to local storage and update provider
   Future<void> setUser(UserModel user) async {
     _user = user;
     await _localStorageService.saveUser(user);
     notifyListeners();
   }
 
-  // Clear user data
   Future<void> clearUser() async {
     _user = null;
     await _localStorageService.clearUser();

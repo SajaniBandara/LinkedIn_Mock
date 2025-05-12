@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomField extends StatelessWidget {
-  final String hintText; // Add a hintText parameter
-  final TextEditingController? controller; // Optional controller
-  final bool isObscure; // Optional parameter to hide text
+  final String hintText;
+  final TextEditingController? controller;
+  final bool isObscure;
 
   const CustomField(
       {super.key,
@@ -14,16 +14,16 @@ class CustomField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      controller: controller, // Attach the controller
+      controller: controller,
       obscureText: isObscure,
       validator: (val) {
         if (val!.trim().isEmpty) {
           return "Please enter your $hintText";
         }
         return null;
-      }, // Correct placement of obscureText
+      },
       decoration: InputDecoration(
-        hintText: hintText, // Set the hint text
+        hintText: hintText,
         contentPadding: const EdgeInsets.all(22),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),

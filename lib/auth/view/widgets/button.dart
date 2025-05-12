@@ -17,7 +17,6 @@ class Button extends StatelessWidget {
             style: const TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w600,
-                color: Colors.white)) // Text
-        );
+                color: Colors.white)));
   }
 }

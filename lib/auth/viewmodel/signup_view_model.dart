@@ -27,7 +27,6 @@ class SignUpViewModel extends ChangeNotifier {
           bannerImage: '',
         );
 
-        // Save user to provider and local storage
         Provider.of<UserProvider>(context, listen: false).setUser(userModel);
 
         Navigator.pushReplacementNamed(context, '/signin');

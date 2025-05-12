@@ -50,7 +50,6 @@ class SigninPage extends StatelessWidget {
                   buttonText: "Sign In",
                   onTap: () {
                     if (formKey.currentState!.validate()) {
-                      // Trigger the ViewModel's signIn method
                       signInViewModel.signIn(
                         emailController.text.trim(),
                         passwordController.text.trim(),

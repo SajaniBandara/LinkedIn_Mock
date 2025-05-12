@@ -8,14 +8,12 @@ import 'package:flutter/material.dart';
 class LocalStorageService {
   static const String _userKey = 'user';
 
-  // Save UserModel to local storage
   Future<void> saveUser(UserModel user) async {
     final prefs = await SharedPreferences.getInstance();
     final userJson = jsonEncode(user.toJson());
     await prefs.setString(_userKey, userJson);
   }
 
-  // Retrieve UserModel from local storage
   Future<UserModel?> getUser() async {
     final prefs = await SharedPreferences.getInstance();
     final userJson = prefs.getString(_userKey);
@@ -26,7 +24,6 @@ class LocalStorageService {
     return null;
   }
 
-  // Clear user data from local storage
   Future<void> clearUser() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_userKey);

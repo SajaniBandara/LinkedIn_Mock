@@ -71,7 +71,6 @@ class LandingPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: screenHeight * 0.03),
-              // Buttons
               Padding(
                 padding: EdgeInsets.symmetric(
                   horizontal: screenWidth * 0.06,
