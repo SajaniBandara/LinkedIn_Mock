@@ -1,0 +1,7 @@
+{
+  "cmake.sourceDirectory": "D:/Ilabs/ilabs/linux",
+  "java.project.sourcePaths": [
+    "android/app"
+  ],
+  "java.configuration.updateBuildConfiguration": "interactive"
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "747636372400",
+    "project_id": "ilabs-db6a4",
+    "storage_bucket": "ilabs-db6a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747636372400:android:9ae9ee6875df5149d11c75",
+        "android_client_info": {
+          "package_name": "com.example.ilabs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCddYZC3_wFER2laErsMBSclLEDGnXrm54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
